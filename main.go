@@ -27,6 +27,13 @@ func main() {
 	dbPort := os.Getenv("DB_PORT")
 	dbName := os.Getenv("DB_NAME")
 
+	//sample of how dotenv should look
+	// DB_USER = your_db_username
+	// DB_PASSWORD = your_db_password
+	// DB_HOST = localhost
+	// DB_PORT = 3306
+	// DB_NAME = your_db_name
+
 	// Open the CSV file
 	file, err := os.Open("new_cost.csv")
 	if err != nil {
